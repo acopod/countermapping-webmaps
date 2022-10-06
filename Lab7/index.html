@@ -66,12 +66,33 @@ map.on('load',function(){
     'type':'vector',
     'url': 'mapbox://acopod.3ieun66g'
   });
+
   // add a new layer with your polygons
   map.addLayer({
     'id':'flood_zones',
     'type':'fill',
     'source':'sandy_layer',
     'source-layer':'Sandy_Inundation_Zone-3p8y2o',
+    'paint':{
+      'fill-color':'#00158f',
+      'fill-opacity': 0.5
+    }
+  })
+});
+</script>
+<script>
+map.on('load',function(){
+  // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
+  map.addSource('NYCHA_layer',{
+    'type':'vector',
+    'url': 'mapbox://acopod.bqldbfyg'
+  });
+  // add a new layer with your polygons
+  map.addLayer({
+    'id':'NYCHA_zones',
+    'type':'fill',
+    'source':'NYCHA_layer',
+    'source-layer':'Map_of_NYCHA_Developments-8qano9',
     'paint':{
       'fill-color':'#00158f',
       'fill-opacity': 0.5
