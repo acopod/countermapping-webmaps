@@ -40,7 +40,7 @@
   	<div class="map-overlay top">
   	<div class="map-overlay-inner">
   	<h2>Public and Affordable Housing Flood Risk</h2>
-    <!-- INSERT TEXT HERE -->
+    <content>Public and Affordable Housing Flood Risk</content>
     <div ></div>
   	</div>
   	</div>
@@ -62,6 +62,8 @@ const map = new mapboxgl.Map({
 <script>
 map.on('load',function(){
   // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
+
+
   map.addSource('sandy_layer',{
     'type':'vector',
     'url': 'mapbox://acopod.3ieun66g'
@@ -77,13 +79,9 @@ map.on('load',function(){
       'fill-color':'#00158f',
       'fill-opacity': 0.5
     }
-  })
-});
-</script>
-<script>
-map.on('load',function(){
-  // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
-  map.addSource('NYCHA_layer',{
+  });
+
+    map.addSource('NYCHA_layer',{
     'type':'vector',
     'url': 'mapbox://acopod.bqldbfyg'
   });
@@ -94,10 +92,16 @@ map.on('load',function(){
     'source':'NYCHA_layer',
     'source-layer':'Map_of_NYCHA_Developments-8qano9',
     'paint':{
-      'fill-color':'#00158f',
-      'fill-opacity': 0.5
+      'fill-color':'#9e0a0b',
+      'fill-opacity': 0.8
     }
-  })
+  });
+});
+</script>
+<script>
+map.on('load',function(){
+  // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
+
 });
 </script>
 </body>
