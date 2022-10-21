@@ -47,13 +47,13 @@
               <input id='affHousing' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <label class='check-container'>Co-Op
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#49416D'></span>
           </label>
           <label class='check-container'>Shelter
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#7962A5'></span>
           </label>
           <label class='check-container'>HPD subsized
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#A882DD'></span>
           </label>
           <label class='check-container'>Mobile Home
               <span class="legend-key" style='background:#CCC'></span>
@@ -146,6 +146,11 @@
         'url': 'mapbox://iamwfx.28ut4nij'
       });
 
+      map.addSource('affHousingLayer',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.ab4g098q'
+      });
+
       // Flood plains
       map.addSource('FutureFloodplains_2020_100yr',{
         'type':'vector',
@@ -176,10 +181,7 @@
         'url': 'mapbox://iamwfx.8thgevrt'
       });
 
-      map.addSource('affHousingLayer',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.ab4g098q'
-      });
+
 
 
       map.addLayer({
@@ -231,18 +233,24 @@
         'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
         'paint':{
           'line-color':[
-          'match',
+          "match",
           ['get','hous_type'],
-          'coop','49416D',
-          'homeless','7962A5',
-          'hpd_sub','A882DD',
-          'mob_home','E08D79',
-          'pub_hou','E0BEAC',
-          'sro','E0EFDE',
-          'none','B3F2DD',
-           ],
+          'coop',
+          '#49416d',
+          'homeless',
+          '#7962a5',
+          'hpd_sub',
+          '#a882dd',
+          'mob_home',
+          '#e08d79',
+          'pub_hou',
+          '#e0beac',
+          'sro',
+          '#e0efde',
+          '#ccc'
+          ],
           'line-opacity': 1,
-          'line-width': 2,
+          'line-width':['interpolate',['linear'],['zoom'], 13, 1, 18, 12],
         }
       });
 
@@ -341,6 +349,41 @@
       // layerLabel  = checkboxes[i].id;
       checkboxes[i].onclick = switchLayer;
     }
+
+    const popup = new mapboxgl.Popup({
+  closeButton: false,
+  closeOnClick: false
+  });
+    map.on('mouseenter','affHousing',function(e){
+
+        const coordinates = e.features[0].geometry.coordinates.slice();
+          // Here's that function that does the transformation
+
+        function emptyToYesNo(val){
+          if (val == null || val == undefined){
+            return "No"} else {return "Yes"};
+        };
+
+        const Address = e.features[0].properties.Address;
+        const BBL = e.features[0].properties.BBL;
+        const Council = e.features[0].properties.Council;
+        const P_2050_1 =emptyToYesNo(e.features[0].properties.P_2050_1); 
+
+
+  // We apply this function to our value.
+  /// THERE ARE THREE MORE VARIABLES MISSING!
+  /// FILL IN THE REST
+
+
+
+    popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
+
+
+    });
+        map.on('mouseleave', 'affHousing', function() {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+        });
 
   });
 
