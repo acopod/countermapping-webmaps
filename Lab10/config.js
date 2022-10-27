@@ -1,9 +1,9 @@
 var config = {
     style: 'mapbox://styles/acopod/cl9r4xmnj001n15p8heixjraz',
-    accessToken: 'pk.eyJ1IjoiYWNvcG9kIiwiYSI6ImNsOHg1OG5ybjAxajIzb2s0OGgzbmIxbDAifQ.hdscZl9C1nd35pLqEB1xsg',
+    accessToken: 'pk.eyJ1IjoiYWNvcG9kIiwiYSI6ImNsOXI4NHEzZTBkbWU0MHFtZGJuaGZkYWMifQ.sZmqyas3S7qPVHJO032xuA',
     showMarkers: true,
     markerColor: '#3FB1CE',
-    //projection: 'equirectangular',
+    projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     inset: true,
@@ -22,10 +22,10 @@ var config = {
             image: 'images/Water1-superJumbo.jpg',
             description: 'In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = "https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page">without power for days or even weeks</a>. New York City Housing Authority public housing developments were affected. <a href="https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf">24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected. With rising sea levels from climate change and the <a href="https://www.nytimes.com/2017/04/18/magazine/when-rising-seas-transform-risk-into-certainty.html">promise</a> of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this? </p>',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: 0
+                center: [-73.97269, 40.75511],
+zoom: 11.48,
+pitch: 46.04,
+bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
