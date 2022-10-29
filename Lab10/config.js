@@ -11,7 +11,7 @@ var config = {
     use3dTerrain: false, //set true for enabling 3D maps.
     title: 'Public and Affordable Housing Flood Risk',
     subtitle: 'Do you still want to put your asset near waterfront after Hurricane Sandy?',
-    byline: 'By a Digital Storyteller',
+    byline: 'By acopod',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
             {
@@ -23,7 +23,7 @@ var config = {
             description: 'In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = "https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page">without power for days or even weeks</a>. New York City Housing Authority public housing developments were affected. <a href="https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf">24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected. With rising sea levels from climate change and the <a href="https://www.nytimes.com/2017/04/18/magazine/when-rising-seas-transform-risk-into-certainty.html">promise</a> of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this? </p>',
             location: {
                 center: [-73.97269, 40.75511],
-zoom: 11.48,
+zoom: 12,
 pitch: 46.04,
 bearing: 0.00
             },
@@ -35,7 +35,6 @@ bearing: 0.00
                     {
                      layer: 'pluto-hous-type',
                      opacity: 0,
-                     duration: 5000 
                     }
             ],
             onChapterExit: [
@@ -50,13 +49,13 @@ bearing: 0.00
             alignment: 'right',
             hidden: false,
             title: 'Damages to the Red Hook Houses',
-            image: 'images/2362.webp',
-            description: 'The city classifies Red Hook Houses as being in flood zone 1, indicating high flood risk. During Hurricane Sandy in 2012, the development was inundated with 6 feet (1.8 m) of flood water through sewer overflow and high tides.[16][2][17] The storm left residents without power and fresh water for months. This caused leaks, resulting in mold that affected many residents health. Prior to Sandy, various city reports outlined the need for increased flood protection projecting floods as high as 5 feet during storm surges yet NYCHA officials did not anticipate storm surges being that strong.',
+            image: 'images/2362.png',
+            description: 'New York City has classified the Red Hook as a high-risk flooding zone. During Hurricane Sandy, most of the area was inundated with 6 feet of floodwater due to sewer overflow and high tide, leaving the residents without electricity and fresh water for months. Therefore, NYCHA conceived a new public housing program at Red Hook that address the issue of sustainability. The development is the red area that includes 28 housing complexes and a capacity of over 6,000 people. However, the site locates precisely on the 2050 and 2100 predicted floodplains, possibly increasing the effort of design and planning. Whether there will have a better site for the housing development?',
             location: {
-                center: [-74.01240, 40.67357],
-                zoom: 14.99,
-                pitch: 44.53,
-                bearing: 84.22,
+                center: [-74.00578, 40.67455],
+zoom: 15.5,
+pitch: 56.45,
+bearing: 49.96
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
