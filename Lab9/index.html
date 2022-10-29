@@ -178,11 +178,7 @@ background: #ee8a65;
             <input id='nychaBuildings' type='checkbox' name='viz-toggle' checked='checked'>
         </label> -->
       </div>
-      <br> 
-      <br> 
-      <br> 
-      <br> 
-      <br> 
+
 
        <h3>Flood Risk Neighbourhood</h3>
   	</div>
@@ -214,24 +210,7 @@ background: #ee8a65;
         'type':'vector',
         'url': 'mapbox://iamwfx.bpjzmy2b'
       });
-
-      map.addSource('censusLayer',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.6nowkujs'
-      });
-
-      map.addSource('nychaLayer',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.28ut4nij'
-      });
-
-      map.addSource('affHousingLayer',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.ab4g098q'
-      });
-
-      // Flood plains
-      map.addSource('FutureFloodplains_2020_100yr',{
+         map.addSource('FutureFloodplains_2020_100yr',{
         'type':'vector',
         'url': 'mapbox://iamwfx.bbchggzx'
       });
@@ -260,26 +239,27 @@ background: #ee8a65;
         'url': 'mapbox://iamwfx.8thgevrt'
       });
 
+      map.addSource('censusLayer',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.6nowkujs'
+      });
+
+      map.addSource('nychaLayer',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.28ut4nij'
+      });
+
+      map.addSource('affHousingLayer',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.ab4g098q'
+      });
+
+      // Flood plains
+   
 
 
 
-      map.addLayer({
-        'id':'povertyLevel',
-        'type':'fill',
-        'source':'censusLayer',
-        'source-layer':'nyc_blck_grp_2020_wcensus_dro-4db43i',
-        'paint':{
-        'fill-color':'#f5ef42',
-          'fill-opacity':
-           [
-          'step',
-            ['get','AMR5E002'],
-            0,300,.8
-            // .3,.9
 
-            ]
-          }
-        });
 
       //
       // map.addLayer({
@@ -292,48 +272,7 @@ background: #ee8a65;
       //     'fill-opacity': 0.5
       //   }
       // });
-
-
-      map.addLayer({
-        'id':'floodZones',
-        'type':'fill',
-        'source':'sandyLayer',
-        'source-layer':'Sandy_Inundation_Zone-4qcajo',
-        'paint':{
-          'fill-color':'#00158f',
-          'fill-opacity': 0.3,
-        }
-      });
-
-      map.addLayer({
-        'id':'affHousing',
-        'type':'line',
-        'source':'affHousingLayer',
-        'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
-        'paint':{
-          'line-color':[
-          "match",
-          ['get','hous_type'],
-          'coop',
-          '#e41a1c',
-          'homeless',
-          '#377eb8',
-          'hpd_sub',
-          '#4daf4a',
-          'mob_home',
-          '#984ea3',
-          'pub_hou',
-          '#ff7f00',
-          'sro',
-          '#ffff33',
-          '#a65628'
-          ],
-          'line-opacity': 1,
-          'line-width':['interpolate',['linear'],['zoom'], 13, 1, 20, 10],
-        }
-      });
-
-      map.addLayer({
+ map.addLayer({
         'id':'f20_100',
         'type':'fill',
         'source':'FutureFloodplains_2020_100yr',
@@ -394,17 +333,79 @@ background: #ee8a65;
         }
       });
 
+      map.addLayer({
+        'id':'floodZones',
+        'type':'fill',
+        'source':'sandyLayer',
+        'source-layer':'Sandy_Inundation_Zone-4qcajo',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3,
+        }
+      });
+
+
+      map.addLayer({
+        'id':'povertyLevel',
+        'type':'fill',
+        'source':'censusLayer',
+        'source-layer':'nyc_blck_grp_2020_wcensus_dro-4db43i',
+        'paint':{
+        'fill-color':'#f5ef42',
+          'fill-opacity':
+           [
+          'step',
+            ['get','AMR5E002'],
+            0,300,.5
+            // .3,.9
+
+            ]
+          }
+        });
+
+
+      map.addLayer({
+        'id':'affHousing',
+        'type':'line',
+        'source':'affHousingLayer',
+        'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
+        'paint':{
+          'line-color':[
+          "match",
+          ['get','hous_type'],
+          'coop',
+          '#e41a1c',
+          'homeless',
+          '#377eb8',
+          'hpd_sub',
+          '#4daf4a',
+          'mob_home',
+          '#984ea3',
+          'pub_hou',
+          '#ff7f00',
+          'sro',
+          '#ffff33',
+          '#a65628'
+          ],
+          'line-opacity': 1,
+          'line-width':['interpolate',['linear'],['zoom'], 13, 1, 20, 10],
+        }
+      });
+
+     
+
   // Explicitly set the visibility of each to be on or off.
   // There are probably easier ways to do this../
-    map.setLayoutProperty('floodZones',"visibility", "visible");
-    map.setLayoutProperty('povertyLevel',"visibility", "visible");
-    // map.setLayoutProperty('nychaBuildings',"visibility", "visible");
-    map.setLayoutProperty('f20_100',"visibility", "visible");
+      map.setLayoutProperty('f20_100',"visibility", "visible");
     map.setLayoutProperty('f20_500',"visibility", "visible");
     map.setLayoutProperty('f50_100',"visibility", "visible");
     map.setLayoutProperty('f50_500',"visibility", "visible");
     map.setLayoutProperty('f100_100',"visibility", "visible");
     map.setLayoutProperty('f100_500',"visibility", "visible");
+
+    map.setLayoutProperty('floodZones',"visibility", "visible");
+    map.setLayoutProperty('povertyLevel',"visibility", "visible");
+    // map.setLayoutProperty('nychaBuildings',"visibility", "visible");
 
     map.setLayoutProperty('affHousing',"visibility", "visible");
 
