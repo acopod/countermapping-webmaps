@@ -29,7 +29,7 @@ var config = {
                 zoom: 4.2,
                 pitch: 60,
                 bearing: 0,
-                speed: 0.05,
+                //speed: 0.05,
 
             },
             mapAnimation: 'flyTo',
@@ -964,33 +964,15 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-            {
-                     layer: 'encampments_NYC',
-                     opacity: 0.08,
-                     duration: 9000
-                 },
+        
                  {
                      layer: 'nycshelters-28vgv8',
                      opacity: 0,
                      duration: 3000
                  },
+                 
                  {
-                     layer: 'dek',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'bro',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'pro',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'hispanic-1-2s7lkl',
+                     layer: 'bbc',
                      opacity: 0.6,
                      duration: 3000
                  },
@@ -1006,7 +988,7 @@ var config = {
                      duration: 3000
                  },
                  {
-                     layer: 'hispanic-1-2s7lkl',
+                     layer: 'bbc',
                      opacity: 0,
                      duration: 3000
                  }]
@@ -1038,21 +1020,7 @@ var config = {
                      opacity: 0,
                      duration: 3000
                  },
-                 {
-                     layer: 'dek',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'bro',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'pro',
-                     opacity: 0,
-                     duration: 1
-                 },
+                
                  ],
             onChapterExit: [{
                      layer: 'NYC_afterschool',
@@ -1097,21 +1065,7 @@ var config = {
                      opacity: 0,
                      duration: 3000
                  },
-                 {
-                     layer: 'dek',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'bro',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'pro',
-                     opacity: 0,
-                     duration: 1
-                 },
+                 
                  ],
             onChapterExit: [
             ]
@@ -1147,21 +1101,8 @@ var config = {
                      layer: 'enployment-2fvbrx',
                      opacity: 0.8,
                      duration: 3000
-                 },{
-                     layer: 'dek',
-                     opacity: 0,
-                     duration: 1
                  },
                  {
-                     layer: 'bro',
-                     opacity: 0,
-                     duration: 1
-                 },
-                 {
-                     layer: 'pro',
-                     opacity: 0,
-                     duration: 1
-                 },{
                      layer: 'hub3-9degni',
                      opacity: 0,
                      duration: 3000
@@ -1172,7 +1113,7 @@ var config = {
                      duration: 3000
                  },
 
-{
+                {
                      layer: 'mexican-06zoxo',
                      opacity: 0,
                      duration: 3000
@@ -1374,7 +1315,7 @@ var config = {
                  }]
         },*/
         {
-            id: '2-3-2-chapter',
+            id: '2-3-444-chapter',
             alignment: 'left',
             hidden: false,
             title: 'Shelters and Surrounding',
@@ -1427,26 +1368,8 @@ var config = {
 
 
                  ],
-            onChapterExit: [{
-                     layer: 'dek',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 {
-                     layer: 'bro',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 {
-                     layer: 'pro',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 {
-                     layer: 'NYC_hispanic_1',
-                     opacity: 0,
-                     duration: 3000
-                 },
+            onChapterExit: [
+                 
                  {
                      layer: 'hub3-9degni',
                      opacity: 0,
