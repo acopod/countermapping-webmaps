@@ -1,5 +1,5 @@
 map.on('load',function(){
-  map.addSource('pr',{
+ /* map.addSource('pr',{
     'type':'raster',
     'url': 'mapbox://acopod.63snp6nk'
   });
@@ -10,7 +10,7 @@ map.on('load',function(){
   map.addSource('br',{
     'type':'raster',
     'url': 'mapbox://acopod.b7ca4bff'
-  });
+  });*/
   map.addSource('refugee_resettlement',{
     'type':'vector',
     'url': 'mapbox://acopod.94lc4mm3'
@@ -79,10 +79,7 @@ map.on('load',function(){
     'type':'vector',
     'url': 'mapbox://acopod.709b2b5z'
   });
-  map.addSource('NYC_hispanic',{
-    'type':'vector',
-    'url': 'mapbox://acopod.7wd0aj7f'
-  });
+
 
 
 
@@ -102,7 +99,7 @@ map.on('load',function(){
       'fill-opacity': 0,
       //'fill-stroke-width': 0,
     }
-  });
+  });/*
       map.addLayer({
     'id':'dek',
     'type':'raster',
@@ -129,7 +126,7 @@ map.on('load',function(){
     'paint': {
 'raster-fade-duration': 0
 }
-  });
+  });*/
     map.addLayer({
     'id':'undocumentedmexico',
     'type':'circle',
@@ -378,18 +375,7 @@ map.on('load',function(){
     'line-opacity':0 ,
     }
   });
-     map.addLayer({
-    'id':'NYC_hispanic_1',
-    'type':'circle',
-    'source':'NYC_hispanic',
-    'source-layer':'NYC_hispanic-41wpcc',
-    'paint': {
-    'circle-color': '#b277d9',
-    'circle-radius': 15,
-    'circle-opacity': 0,  
-    }
-  });
-   
+
 
 
 
