@@ -920,7 +920,7 @@ var config = {
             onChapterExit: [
                  {
                      layer: 're_2021',
-                     opacity: 1,
+                     opacity: 0,
                      duration: 3000
                  },
                  {
@@ -932,7 +932,12 @@ var config = {
                      layer: 'sites-6rpdnp',
                      opacity: 0.5,
                      duration: 3000
-                 },]
+                 },
+                 {
+                     layer: 'bbc',
+                     opacity: 0.6,
+                     duration: 3000
+                 }]
         },
                 {
     id: 'interlude-2',
@@ -963,30 +968,14 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [
-        
-                 {
-                     layer: 'nycshelters-28vgv8',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 
+            onChapterEnter: [                 
                  {
                      layer: 'bbc',
                      opacity: 0.6,
                      duration: 3000
                  },
                  ],
-            onChapterExit: [{
-                     layer: 'NYC_afterschool',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 {
-                     layer: 'NYC_dropin',
-                     opacity: 0,
-                     duration: 3000
-                 },
+            onChapterExit: [
                  {
                      layer: 'bbc',
                      opacity: 0,
