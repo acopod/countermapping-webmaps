@@ -87,15 +87,14 @@ var config = {
         },
                 
         {
-            id: '1-1-chapter',
+            id: '1-1AA-chapter',
             alignment: 'right',
             hidden: false,
             title: 'Southwest Border Encounters Before January 20, 2021',
             image: 'images/50040937841.jpg',
             description: 'During the Trump administration, <a href = "https://">there were many policies on the U.S.-Mexico border that restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. This is also Trumps main policy, border security and control of illegal immigration. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
             location: {
-                center: //[-122.36687, 34.58745]
-                [-95.78645, 33.69030],
+                center:[-95.78645, 33.69030],
                 zoom: 4.2,
                 pitch: 60,
                 bearing: 0
@@ -104,21 +103,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                 {
-                     layer: 'borderencounter_b2021',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 {
-                     layer: 'borderencounter_b2021_circle',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                  {
-                     layer: 'undocumented-mexico-bar-9ouf4k',
-                     opacity: 0,
-                     duration: 1
-                 }, 
+        
                  
                  {
                      layer: 'borderencounter-simple-zone-2020',
@@ -239,7 +224,7 @@ var config = {
         
         
 {
-            id: '2-1-chapter',
+            id: '2-1SSS-chapter',
             alignment: 'left',
             hidden: false,
             title: 'Unauthorized Immigrant Populations from Mexico',
@@ -256,11 +241,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                 {
-                     layer: 'undocumentedmexico',
-                     opacity: 0,
-                     duration: 3000
-                 },
+                 
                  {
                      layer: 'bordercrossing-bar-1-6pgh5r',
                      opacity: 0.75,
@@ -275,15 +256,6 @@ var config = {
                      layer: 'inflow-number-79gkq9',
                      opacity: 0,
                      duration: 3000
-                 },{
-                     layer: 'route_north_1',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                 {
-                     layer: 'route_north_2',
-                     opacity: 0,
-                     duration: 3000
                  },
 
                  {
@@ -296,22 +268,8 @@ var config = {
                      opacity: 0,
                      duration: 3000
                  },
-                 {
-                     layer: 'route_south_1',
-                     opacity: 0,
-                     duration: 3000
-                 },
-                                  {
-                     layer: 'route_south_2',
-                     opacity: 0,
-                     duration: 3000
-                 },
                  ],
-            onChapterExit: [{
-                     layer: 'undocumentedmexico',
-                     opacity: 0,
-                     duration: 3000
-                 }]
+            onChapterExit: []
         },
         {
             id: '0-chapter',
@@ -953,7 +911,7 @@ var config = {
     },
 },
 {
-            id: '2-2-222-chapter',
+            id: '2-2-222AAA-chapter',
             alignment: 'left',
             hidden: false,
             title: 'New Neighbors from Latin American',
