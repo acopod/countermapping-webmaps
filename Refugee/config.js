@@ -150,9 +150,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("polling-legend").style.visibility = "hidden";
-                document.getElementById("walkability-legend").style.visibility = "hidden";
-                document.getElementById("vehicle-legend").style.visibility = "hidden";
+                document.getElementById("refugees_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                  {
@@ -974,6 +972,7 @@ var config = {
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("latin_index").style.visibility = "hidden";
+                document.getElementById("shelters_index").style.visibility = "hidden";
             },
             onChapterEnter: [
             {
@@ -1058,6 +1057,7 @@ var config = {
             callback:() => {
                 document.getElementById("shelters_index").style.visibility = "hidden";
                 document.getElementById("job_index").style.visibility = "visible";
+                document.getElementById("business_index").style.visibility = "hidden";
             },
             onChapterEnter: [
             {
@@ -1295,7 +1295,7 @@ var config = {
             image: 'images/Screenshot 2022-12-01 035231.png',
             description: 'The war or conflict is not caused by a single decision, but it is the aggregation. Similarly, the innocent refugee under manipulation could present a disastrous effect on the built environment if we do not read it carefully. The connection behind the plurality and singularity is this target that the mapping wants to approach. Therefore, the datasets mentioned above not only focus on official information but also hope to use media such as reports, articles, biographies, and social media to find information and phenomena that data cannot elicit. Especially as a refugee, did he find himself a part of the weapon? Was the exaggerated propaganda and fear of wars making him embark on the path of migration?',
             location: {
-              center: [-73.91267, 40.81897],
+              center: [-73.92067, 40.82097],
               zoom: 13,
               pitch: 0,
               bearing: 0,
