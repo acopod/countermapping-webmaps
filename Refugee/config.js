@@ -12,8 +12,8 @@ var config = {
     title: 'Refugees as Weapons?',
     subtitle: 'The sequel of unauthorized migrants from US-Mexico border',
    
-    para1: 'The diversification of modern warfare, such as information warfare, economic warfare, or the deliberate manipulation of fears of war, has caused tremendous changes in the built environment and cities. Among them, a new tactic is using refugees as weapons. Through deliberate manipulation of refugees, paralyzing or undermining the organization, and dislocating civilians for an economic purpose, the targeted country is forced to put resources in the humanitarian space and overwhelmed. Behind this phenomenon are the refugees who are forced to migrate. A refugee camp or an unfamiliar city will be their new home. The overwhelmed situation of immigrants makes the targeted country need to make concessions on political agreements. Some methodologies in weaponized migration have been articulated by Kelly Greenhill. This paper will highlight the effect of migration infiltration.',
-    para2: 'The migration infiltration indicates that the invisible hands manipulate the flow of migrants to facilitate terrorist operations in states offering asylum. For homeland security, the states offering asylum label the migrants with distinct characteristics which can justify not providing assistance for them, such as people related to crime, drugs, and terrorism. The attacker thus mobilized the demographic into a sudden influx to the targeted country through propaganda to raise their impulse of migration. For the United States, the most obvious example is the US-Mexico border. Many people are waiting to enter the United States at the border, and they set up camps there, hoping to one day enter the United States to find more opportunities. Camps are the places of desperation that the public imagines. It has also been seen as an incubator for further migration infiltration. If the counter-mapping creates a new perspective, the camps may not be a catalyst for migration infiltrations. And we can understand the sequel of migration in a different way beyond the endless suffering.',
+    para1: 'The diversification of modern warfare, such as information and economic warfare, has caused tremendous changes in the built environment and cities. Among them, a new tactic is using refugees as weapons. Through deliberate manipulation of refugees, paralyzing or undermining the organization, and dislocating civilians for an economic purpose, the targeted country is forced to put resources in the humanitarian space and overwhelmed. Behind this phenomenon are the refugees who are forced to migrate. A refugee camp or an unfamiliar city will be their new home. The overwhelmed situation of immigrants makes the targeted country need to make concessions on political agreements. Some methodologies in weaponizing migration have been articulated by Kelly Greenhill. This map will highlight the effect of migration infiltration.',
+    para2: 'The migration infiltration indicates that the invisible hands manipulate the flow of migrants to facilitate terrorist operations in states offering asylum. For homeland security, the states offering asylum label the migrants with distinct characteristics that can justify not providing assistance, such as people related to crime, drugs, and terrorism. The attacker thus mobilized the demographic into a sudden influx to the targeted country through propaganda to raise their impulse of migration. For the United States, the most obvious example is the US-Mexico border. Many people are waiting to enter the United States at the border, and they set up camps there, hoping to one day enter the United States to find more opportunities. Camps are the places of desperation that the public imagines. It has also been seen as an incubator for further migration infiltration. If the counter-mapping creates a new perspective, the camps may not be a catalyst for migration infiltrations. Moreover, we can understand the sequel of migration in a different way.',
     //byline: 'By Tung Chen',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
@@ -23,7 +23,7 @@ var config = {
             hidden: false,
             title: 'Border Crossing',
             image: 'images/numbers.png',
-            description: 'Migration Infiltration is an operation between unsuspecting, innocent, and unwitting refugees. Violent criminal groups have recently used it by exploiting vulnerable groups and facilitating terrorist operations in asylum-providing states. In the United States, the site for this phenomenon is best represented by immigrants and refugees at the US-Mexico border. Due to the difference in living standards and economic levels between the United States and Mexico, about 1 million illegal immigrants try to cross the border to live in the United States every year. More than 80% of them are Mexicans, and the other 20% are mostly Central Americans.In fiscal year 2021, a total of 188,228,921 people crossed the US-Mexico border. Among them, San Ysidro, El Paso, and Laredo have the highest number of passers-by, accounting for 40% of the total.',
+            description: 'Migration Infiltration is an operation manipulating innocent and unwitting refugees. Violent criminal groups have recently used it by exploiting vulnerable groups and facilitating terrorist operations in asylum-providing states. In the United States, the site for this phenomenon is represented by immigrants and refugees at the US-Mexico border. Due to the difference in living standards and economic levels between the United States and Mexico, about 1 million illegal immigrants try to cross the border to live in the United States every year. More than 80% of them are Mexicans, and the other 20% are mainly from Latin America. In the fiscal year of 2021, a total of 188,228,921 people crossed the US-Mexico border. Among them, San Ysidro, El Paso, and Laredo have the highest number of passers-by, accounting for 40% of the total.',
             location: {
                 center:  [-95.78645, 33.69030],
                 zoom: 4.2,
@@ -34,7 +34,11 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("polling-legend").style.visibility = "hidden";
+                document.getElementById("walkability-legend").style.visibility = "visible";
+                document.getElementById("vehicle-legend").style.visibility = "hidden";
+            },
                         onChapterEnter: [
                  {
                      layer: 'border_crossing',
@@ -92,7 +96,7 @@ var config = {
             hidden: false,
             title: 'Southwest Border Encounters Before January 20, 2021',
             image: 'images/50040937841.jpg',
-            description: 'During the Trump administration, <a href = "https://">there were many policies on the U.S.-Mexico border that restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. This is also Trumps main policy, border security and control of illegal immigration. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
+            description: 'During the Trump administration, <a href = "https://">Many policies on the U.S.-Mexico border restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
             location: {
                 center:[-95.78645, 33.69030],
                 zoom: 4.2,
@@ -333,7 +337,7 @@ var config = {
                     
             ]
         },
-        {
+        /*{
             id: '0-XX-chapter',
             alignment: 'left',
             hidden: false,
@@ -405,7 +409,7 @@ var config = {
                  
                     
             ]
-        },
+        },*/
         /*{
             id: '2-1-1-chapter',
             alignment: 'left',
@@ -1267,7 +1271,7 @@ var config = {
             hidden: false,
             title: 'Shelters and Surrounding',
             image: 'images/Screenshot 2022-12-01 035231.png',
-            //description: 'Copy these sections to add to your story.',
+            description: 'The war or conflict is not caused by a single decision, but it is the aggregation. Similarly, the innocent refugee under manipulation could present a disastrous effect on the built environment if we do not read it carefully. The connection behind the plurality and singularity is this target that the mapping wants to approach. Therefore, the datasets mentioned above not only focus on official information but also hope to use media such as reports, articles, biographies, and social media to find information and phenomena that data cannot elicit. Especially as a refugee, did he find himself a part of the weapon? Was the exaggerated propaganda and fear of wars making him embark on the path of migration?',
             location: {
               center: [-73.91267, 40.81897],
               zoom: 14,
@@ -1338,7 +1342,8 @@ var config = {
     id: 'interlude-3',
     alignment: 'center',
     hidden: false,
-    description: 'The war or conflict is not caused by a single decision, but it is the aggregation. Similarly, the innocent refugee under manipulation could present a disastrous effect on the built environment if we do not read it carefully. The connection behind the plurality and singularity is this target that the mapping wants to approach. Therefore, the datasets mentioned above not only focus on official information but also hope to use media such as reports, articles, biographies, and social media to find information and phenomena that data cannot elicit. Especially as a refugee, did he find himself a part of the weapon? Was the exaggerated propaganda and fear of wars making him embark on the path of migration?',
+    title: 'Methodologies',
+    description: 'This map is intended to reveal undocumented immigrants from Mexico under the Trump and Biden administrations. In order to show the difference between these two phases, a collection of datasets is included. They are: <br><a href="https://www.bts.dot.gov/bts/content/border-crossingentry-data">US-Mexico Border Crossing / Entry Data in 2021 </a><br><a href="https://www.cbp.gov/newsroom/stats/nationwide-encounters">Southwest Border Encounters By Fiscal Years in 2020 and 2021</a><br><a href="https://www.migrationpolicy.org/programs/data-hub/charts/unauthorized-immigrant-populations-country-and-region-top-state-and-county">Unauthorized Immigrant Populations from Mexico in 2019</a><br><a href="https://usafacts.org/articles/where-do-refugees-resettle-in-the-us/">Cumulative Amount of Refugees Resettled from FY2010 to FY2021</a><br><a href="https://data.cityofnewyork.us/Social-Services/Homeless-Encampments/jufg-yyky"> Homeless Encampments Removal In NYC from 2010 to Present</a><br><a href="https://www.shelterlist.com/city/ny-staten_island">Locations of Homeless shelters in NYC</a><br><a href="https://www.nhgis.org/">Employment Status for the Population 16 Years and Over from 2016-2020</a><br><br>Besides, some of data is self-collected or re-organized from online resource. The first is satellite images in Tijuana, Ciudad Acuna, and Reynosa before and after 2021. They are exported through Google Earth. The second is speculated routes from Latin American to the US-Mexico border. Before establishing these pathways, possible immigration starting points were inferred from several reports. Several possible routes were calculated from google navigation, and the routes were converted to geospatial data. The third is the list of possible locations for jobs near the shelter. The data is constructed using keywords, such as Hispanic-owned business, in Google Maps, and then the search results were exported as geospatial data.<br><br>After data collection, the datasets were redrawn into choropleth maps and bar charts on maps and were compared and overlapped to make the analysis. There are two key points in this analysis method. One is to compare whether there are a large number of undocumented immigrants affecting the city before 2021 and after Biden took office in 2021. The second is to find their possible residence and work points in the city by overlapping the positions of the shelters and the distribution of immigrants.',
     //video: 'images/902-1_902-2364-PD2_preview.mp4',
     location: {
       center: [-74.01351, 40.74544],
