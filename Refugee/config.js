@@ -25,7 +25,7 @@ var config = {
             image: 'images/numbers.png',
             
             description: 'Migration Infiltration is an operation manipulating innocent and unwitting refugees. Violent criminal groups have recently used it by exploiting vulnerable groups and facilitating terrorist operations in asylum-providing states. In the United States, the site for this phenomenon is represented by immigrants and refugees at the US-Mexico border. Due to the difference in living standards and economic levels between the United States and Mexico, about 1 million illegal immigrants try to cross the border to live in the United States every year. More than 80% of them are Mexicans, and the other 20% are mainly from Latin America. In the fiscal year of 2021, a total of 188,228,921 people crossed the US-Mexico border. Among them, San Ysidro, El Paso, and Laredo have the highest number of passers-by, accounting for 40% of the total.',
-            image2: 'images/index-1.png',
+            image2: 'images/index-11.png',
             location: {
                 center:  [-95.78645, 33.69030],
                 zoom: 4.2,
@@ -94,7 +94,7 @@ var config = {
             hidden: false,
             title: 'Southwest Border Encounters Before January 20, 2021',
             image: 'images/50040937841.jpg',
-            description: 'During the Trump administration, <a href = "https://">Many policies on the U.S.-Mexico border restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
+            description: 'Photo credits:<a href="https://da.wikipedia.org/wiki/Trumps_mur">Trumps mur</a><br><br>During the Trump administration, <a href = "https://">Many policies on the U.S.-Mexico border restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
             location: {
                 center:[-95.78645, 33.69030],
                 zoom: 4.2,
