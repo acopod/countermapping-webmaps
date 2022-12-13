@@ -94,10 +94,17 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(image);
     }
 
+    
+
     if (record.description) {
         var story = document.createElement('p');
         story.innerHTML = record.description;
         chapter.appendChild(story);
+    }
+    if (record.image2) {
+        var image2 = new Image();
+        image2.src = record.image2;
+        chapter.appendChild(image2);
     }
 
     if (record.video) {
@@ -246,8 +253,8 @@ map.on("load", function() {
         if (chapter.onChapterEnter.length > 0) {
             chapter.onChapterEnter.forEach(setLayerOpacity);
         }
-        if (chapter.callback) {
-            window[chapter.callback]();
+           if (chapter.callback) {
+            chapter.callback();
         }
         if (chapter.rotateAnimation) {
             map.once('moveend', () => {
