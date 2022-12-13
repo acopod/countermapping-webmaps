@@ -13,9 +13,9 @@ var config = {
     subtitle: 'The sequel of unauthorized migrants from US-Mexico border',
    
     para1: 'The diversification of modern warfare, such as information and economic warfare, has caused tremendous changes in the built environment and cities. Among them, a new tactic is using refugees as weapons. Through deliberate manipulation of refugees, paralyzing or undermining the organization, and dislocating civilians for an economic purpose, the targeted country is forced to put resources in the humanitarian space and overwhelmed. Behind this phenomenon are the refugees who are forced to migrate. A refugee camp or an unfamiliar city will be their new home. The overwhelmed situation of immigrants makes the targeted country need to make concessions on political agreements. Some methodologies in weaponizing migration have been articulated by Kelly Greenhill. This map will highlight the effect of migration infiltration.',
-    para2: 'The migration infiltration indicates that the invisible hands manipulate the flow of migrants to facilitate terrorist operations in states offering asylum. For homeland security, the states offering asylum label the migrants with distinct characteristics that can justify not providing assistance, such as people related to crime, drugs, and terrorism. The attacker thus mobilized the demographic into a sudden influx to the targeted country through propaganda to raise their impulse of migration. For the United States, the most obvious example is the US-Mexico border. Many people are waiting to enter the United States at the border, and they set up camps there, hoping to one day enter the United States to find more opportunities. Camps are the places of desperation that the public imagines. It has also been seen as an incubator for further migration infiltration. If the counter-mapping creates a new perspective, the camps may not be a catalyst for migration infiltrations. Moreover, we can understand the sequel of migration in a different way.',
+    para2: 'The migration infiltration indicates that the invisible hands manipulate the flow of migrants to facilitate terrorist operations in states offering asylum. For homeland security, the states offering asylum label the migrants with distinct characteristics that can justify not assisting, such as people related to crime, drugs, and terrorism. The attacker thus mobilized the demographic. The sudden influx of migrants to the targeted country has been created by propaganda raising their impulse of migration. For the United States, the most obvious example is the US-Mexico border. Many people are waiting to enter the United States at the border, and they set up camps there, hoping to one day enter the United States to find more opportunities. Camps are the places of desperation that the public imagines. It has also been seen as an incubator for further migration infiltration. If the counter-mapping creates a new perspective, the camps may not be a catalyst for migration infiltrations. Moreover, we can understand the sequel of migration in a different way.',
     //byline: 'By Tung Chen',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
      {
             id: '1-2AAAAA-chapter',
@@ -24,7 +24,7 @@ var config = {
             title: 'Border Crossing',
             image: 'images/numbers.png',
             
-            description: 'Migration Infiltration is an operation manipulating innocent and unwitting refugees. Violent criminal groups have recently used it by exploiting vulnerable groups and facilitating terrorist operations in asylum-providing states. In the United States, the site for this phenomenon is represented by immigrants and refugees at the US-Mexico border. Due to the difference in living standards and economic levels between the United States and Mexico, about 1 million illegal immigrants try to cross the border to live in the United States every year. More than 80% of them are Mexicans, and the other 20% are mainly from Latin America. In the fiscal year of 2021, a total of 188,228,921 people crossed the US-Mexico border. Among them, San Ysidro, El Paso, and Laredo have the highest number of passers-by, accounting for 40% of the total.',
+            description: 'Migration Infiltration is an operation manipulating innocent and unwitting refugees. Criminal groups have recently used this concept to exploit vulnerable groups. And the concept also has been seen as facilitating terrorist operations in asylum-providing states. In the United States, the site for this phenomenon is represented by immigrants and refugees at the US-Mexico border. Due to the difference in living standards and economic levels between the United States and Mexico, about 1 million illegal immigrants try to cross the border to live in the United States every year. More than 80% are Mexicans, and the other 20% are mainly from Latin America. In the fiscal year of 2021, a total of 188,228,921 people crossed the US-Mexico border. Among them, San Ysidro, El Paso, and Laredo have the highest number of passers-by, accounting for 40% of the total.',
             image2: 'images/index-11.png',
             location: {
                 center:  [-95.78645, 33.69030],
@@ -94,7 +94,7 @@ var config = {
             hidden: false,
             title: 'Southwest Border Encounters Before January 20, 2021',
             image: 'images/50040937841.jpg',
-            description: 'Photo credits:<a href="https://da.wikipedia.org/wiki/Trumps_mur">Trumps mur</a><br><br>During the Trump administration, <a href = "https://">Many policies on the U.S.-Mexico border restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
+            description: 'Photo credits: <a href="https://da.wikipedia.org/wiki/Trumps_mur">The White House</a><br><br>During the Trump administration, <a href = "https://www.pewresearch.org/fact-tank/2022/04/27/key-facts-about-title-42-the-pandemic-policy-that-has-reshaped-immigration-enforcement-at-u-s-mexico-border/">Many policies on the U.S.-Mexico border restricted immigration and illegal entry.</a> These include the U.S.-Mexico fence, enhanced border control, and restrictions on the number of refugees. From 2017 to 2021, the number of encounters with migrants on the southern border fell to a new low in recent years. In his announcement speech he stated in part, When Mexico sends its people, they are not sending their best...They are sending people that have lots of problems, and they are bringing those problems. ... They are bringing drugs. They are bringing crime. They are rapists. And some, I assume, are good people.',
             location: {
                 center:[-95.78645, 33.69030],
                 zoom: 4.2,
@@ -139,7 +139,7 @@ var config = {
             hidden: false,
             title: 'Southwest Border Encounters After January 20, 2021',
             image: 'images/biden.jpg',
-            description: 'Former U.S. President Donald Trump swore an oath to crack down on illegal immigration and built a wall on the U.S.-Mexico border, but the project was only halfway through after he lost his re-election campaign. During the Biden administration, <a href = "https://">The announced the complete cancellation of the wall construction plan.</a> Will such background conditions change the effectiveness of this weapon? Regardless, the number of people crossing the border has skyrocketed since Trump took office. Because of this situation, camps on the US-Mexico border are spread over Mexican territory, compared to other countries where the camps are located on the territory of the country providing assistance. It reflects the United States awareness of this weapons destructive power. It also highlights the statement that it is essential to reframe the spatial impact caused by refugees to counter the labeling of migrants from Mexico.',
+            description: 'Photo credits: <a href="https://www.voanews.com/a/usa_immigration_biden-immigration-changes-raise-hopes-concerns-us-mexico-border/6202931.html">Reuters</a><br><br>Former U.S. President Donald Trump swore an oath to crack down on illegal immigration and built a wall on the U.S.-Mexico border, but the project was only halfway through after he lost his re-election campaign. During the Biden administration, <a href = " https://www.usatoday.com/story/news/factcheck/2021/02/03/fact-check-joe-biden-executive-order-trump-border-wall-construction/4337994001/">they announced the complete cancellation of the wall construction plan.</a> Will such background conditions change the effectiveness of this weapon? Regardless, the number of people crossing the border has skyrocketed since Trump took office. Because of this situation, camps on the US-Mexico border are spread over Mexican territory, compared to other countries where the camps are located on the territory of the country assisting. It reflects the United States’ awareness of this weapon’s destructive power. It also highlights the statement that it is essential to reframe the spatial impact caused by refugees to counter the labeling of migrants from Mexico.',
             location: {
                 center: [-95.78645, 33.69030],
                 zoom: 4.2,
@@ -234,7 +234,7 @@ var config = {
             title: 'Unauthorized Immigrant Populations from Mexico',
             image: 'images/imig.png',
             image2: 'images/index-2.png',
-            description: 'Therefore, unauthorized immigrant populations from Mexico appeared in the city. <a href = "https://calmatters.org/california-divide/2022/04/california-undocumented-immigrants/">The government began to centrally manage these populations, and they became the mysterious population of the city.</a> Compared with the refugees who live around the U.S.-Mexico border, although these urban immigrants will directly receive assistance and welfare, they will have a more substantial structural impact on the receiving cities. But on the other hand, how will the refugees themselves be marginalized due to the fragmentation of the camps?',
+            description: 'Photo credits: <a href="https://calmatters.org/california-divide/2022/04/california-undocumented-immigrants/">Ronen Tivony</a><br><br>Therefore, unauthorized immigrant populations from Mexico appeared in cities. The government began to manage these populations centrally. They have become the mysterious population of the city. Compared with the refugees who live around the U.S.-Mexico border, although these urban immigrants will directly receive assistance, they will have a more substantial structural impact on the sanctuary cities.',
             location: {
               center: [-122.14940, 39.31806],
               zoom: 3,
@@ -284,7 +284,7 @@ var config = {
             hidden: false,
             title: 'Refugees and Sanctuary City',
             image: 'images/out.png',
-            description: 'The U.S. government has deployed a large number of patrols on the U.S.-Mexico border to patrol the border in order to crack down on illegal immigrants and drug trafficking organizations. The U.S. Army and U.S. Customs and Border Protection jointly used infrared surveillance and helicopters to control the border. This configuration made the border defense a remarkable success and slowed down illegal entry. However, due to the changes of policy after the September 11 attacks, Arizona and New Mexico state governments stated that they are gradually unable to resist a large number of illegal immigrants, which has caused a considerable impact. Coupled with the fact that the number of refugees allowed by law is far smaller than the number of applicants, the number of illegal border crossers continues to rise. This is why migration infiltration is presented. It means that the stage in which this weapon is gradually taking shape.',
+            description: 'The U.S. government has deployed a large number of patrols on the U.S.-Mexico border to patrol the border to crack down on illegal immigrants and drug trafficking organizations. The U.S. Army and U.S. Customs and Border Protection jointly used infrared surveillance and helicopters to control the border. This configuration made the border defense a remarkable success and slowed down illegal entry. However, due to policy changes after the September 11 attacks, Arizona and New Mexico state governments stated that they are gradually unable to resist a large number of illegal immigrants, which has caused a considerable impact. Coupled with the fact that the number of refugees allowed by law is far smaller than the number of applicants, the number of illegal border crossers continues to rise. This is why migration infiltration is presented. It means that the stage in which this weapon is gradually taking shape.',
             location: {
                 center: [-122.14940, 39.31806],
                 zoom: 3,
@@ -476,7 +476,7 @@ var config = {
             hidden: false,
             title: 'Route for opportunities',
             image: 'images/Screenshot 2022-11-22 043710.png',
-            description: '<a href = "https://">The journey to the United States is farther than imagined.</a> The average time it takes to get to the border is one month, and when you add the time spent waiting in the camps, it can take up to two months to enter the United States. Therefore, more people chose to enter illegally, which is also the main source of migration infiltration. Because it is hard to confirm the identity of the person coming through the border control, illegal immigrants are labeled as a possible crime. The war of migration is not caused by a single decision, but by aggregation. Similarly, the illegal crossing could present a disastrous effect on the built environment if we do not read it carefully. What are the real environments they created after arriving at their new home? Border crossing is not just the moment, but the accumulated time of the journey one experienced.',
+            description: '<a href = "https://www.bbc.com/news/world-us-canada-44311420">The journey to the United States is farther than imagined.</a> The average time it takes to get to the border is one month. When adding the time of waiting in the camps, it can take up to two months to enter the United States. Therefore, more people chose to enter illegally, which is also the main source of migration infiltration. Because it is hard to confirm the identity of the person coming through the border control, illegal immigrants are labeled as a possible crime. The war of migration is not caused by a single decision but by aggregations. What are the real environments they created after arriving at their new home? Border crossing is not just the moment but the accumulated time of the journey one experiences. Three sites reveal the aggregation of camps, which are the blue dots on the map. They are Tijuana, Ciudad Acuna, and Reynosa.',
             location: {
                 center: [-117.51896, 25.34866],
                 zoom: 4,
@@ -653,7 +653,7 @@ var config = {
             hidden: false,
             title: 'Tijuana',
             image: 'images/SanYsidroBorderCrossing.jpg',
-            description: 'Tijuana is an important city on the US-Mexico border. Due to the drug trade, the proliferation of guns, human trafficking and gang struggles, the local crime rate has been increasing year by year. According to statistics in 2018, there were more than a thousand murders in the city, with an average of 6 murders a day, so it was reported as one of the most violent cities in the world.',
+            description: 'Photo credits: <a href="https://en.wikipedia.org/wiki/San_Ysidro_Port_of_Entry">Phil Konstantin</a><br><br>Tijuana is an important city on the US-Mexico border. Due to the drug trade, the proliferation of guns, human trafficking and gang struggles, the local crime rate has been increasing year by year. According to statistics in 2018, there were more than a thousand murders in the city, with an average of 6 murders a day, so it was reported as one of the most violent cities in the world.',
             location: {
                 center: [-117.03060, 32.54027],
                 zoom: 17,
@@ -709,7 +709,7 @@ var config = {
             hidden: false,
             title: 'Tijuana',
             image: 'images/ti.jpeg',
-            description: 'Many refugees are here waiting for the opportunity to legally enter the United States. After the outbreak of the Russo-Ukraine War, many Ukrainian refugees who entered the country with tourist visas landed from Mexico City or Cancun Airport. He then went to Tijuana to seek political asylum.',
+            description: 'Photo credits: <a href="https://www.sandiegouniontribune.com/news/immigration/story/2021-02-24/asylum-seekers-camp-tijuana">Alejandro Tamayo</a><br><br>Many refugees are here waiting for the opportunity to enter the United States legally. After the outbreak of the Russo-Ukraine War, many Ukrainian refugees who entered the country with tourist visas landed at Mexico City Airport or Cancun Airport. The refugees then went to Tijuana to seek political asylum.',
             location: {
                 center: [-117.03060, 32.54027],
                 zoom: 17,
@@ -752,7 +752,7 @@ var config = {
             hidden: false,
             title: 'Ciudad Acuna',
             image: 'images/479261-L.jpg',
-            description: 'The Del Río-Ciudad Acuña International Bridge is an international bridge across the Rio Grande. It has always been an important road on the US-Mexico border. Around 200,000 people cross the border in 2021. The bridge carries uninterrupted traffic. And under the bridge is also a temporary camp for these opportunity seekers.',
+            description: 'Photo credits: <a href="https://bridgehunter.com/tx/val-verde/bh90324/">bridgehunter</a><br><br>The Del Río-Ciudad Acuña International Bridge is an international bridge across the Rio Grande. It has always been an important road on the US-Mexico border. Around 200,000 people crossed the border in 2021. The bridge carries uninterrupted traffic. And under the bridge is also a temporary camp for these opportunity seekers.',
             location: {
               center: [-100.92339, 29.32778],
               zoom: 16.5,
@@ -791,7 +791,7 @@ var config = {
             hidden: false,
             title: 'Ciudad Acuna',
             image: 'images/cui.jpg',
-            description: 'In mid-September 2021, a large group of migrants, almost all from Haiti, tried to cross the shallow Rio Grande and seek shelter under bridges into the United States, where they were living in poor conditions. Crowds grow from a few hundred to thousands within a week. All approximately 15,000 migrants have been cleared from their camps under the bridge by September 24, 2021. U.S. authorities are trying to stem the influx of more people across the border. Some migrants are applying for asylum in the United States. Of those allowed to remain in the U.S. pending hearings, some were allowed to go to New York, Boston and Miami. <a href ="https://graphics.reuters.com/USA-IMMIGRATION/MEXICO/mopankddwva/">Border refugees</a>',
+            description: 'Photo credits: <a href="https://www.reuters.com/graphics/USA-IMMIGRATION/MEXICO/mopankddwva/">Travis Hartman</a><br><br>In mid-September 2021, a large group of migrants, almost all from Haiti, tried to cross the shallow Rio Grande and seek shelter under bridges into the United States, where they were living in poor conditions. Crowds grow from a few hundred to thousands within a week. All approximately 15,000 migrants have been cleared from their camps under the bridge by September 24, 2021. U.S. authorities are trying to stem the influx of more people across the border. Some migrants are applying for asylum in the United States. Of those allowed to remain in the U.S. pending hearings, some were allowed to go to New York, Boston and Miami.',
             location: {
               center: [-100.92339, 29.32778],
               zoom: 16.5,
@@ -835,7 +835,7 @@ var config = {
             hidden: false,
             title: 'Reynosa',
             image: 'images/1200x0.jpg',
-            description: 'For nearly three years under the Trump administration, a makeshift camp of migrants from all over the world operated in the Mexican city of Matamoros. It was effectively the first refugee camp on the U.S.-Mexico border, packed with people hoping to win asylum in the United States but forced to wait in Mexico while their cases were being considered. <a href ="https://www.mysanantonio.com/news/us-world/border-mexico/article/Mexican-governor-warns-citizens-to-not-travel-to-12790814.php">Mexican governor warns citizens to not travel to U.S. via Reynosa-McAllen bridge</a>',
+            description: 'Photo credits: <a href="https://www.mysanantonio.com/news/us-world/border-mexico/article/Mexican-governor-warns-citizens-to-not-travel-to-12790814.php">John Moore</a><br><br>In 2021, 10,891,357 people crossed the Reynosa-McAllen bridge. That is the seventh out of 25 border controls. In addition to pedestrians and private vehicles, there is a fairly high proportion of truck crossings, which leads to slow checking and traffic congestion.',
             location: {
               center: [-98.27050, 26.09213],
               zoom: 17,
@@ -874,7 +874,7 @@ var config = {
             hidden: false,
             title: 'Reynosa',
             image: 'images/REEEE.png',
-            description: 'The camp, a painful sign of the human cost of the previous administration’s hard-line immigration policies, was bulldozed in March. With the election of President Biden, many of its residents were allowed into the United States; others were housed safely in shelters in Mexico. Its demise seemed to signal an important move toward what Mr. Biden promised would be a new, more humane era along the border. But within weeks, a new camp sprang up about 55 miles farther west, in the Mexican city of Reynosa, and this one, aid workers say, is far worse than the one at Matamoros ever was. Overcrowded already, with more than 2,000 people, it is filthy and foul-smelling, lacking the health and sanitation infrastructure that nonprofit groups had spent months installing at Matamoros. Assaults and kidnappings for ransom are commonplace. <a href ="https://www.nytimes.com/2021/08/25/us/migrant-camp-reynosa-remain-in-mexico.html/">A Squalid Border Camp Finally Closed. Now Another One Has Opened.</a>',
+            description: 'Photo credits: <a href="https://www.nytimes.com/2021/08/25/us/migrant-camp-reynosa-remain-in-mexico.html/">Sarahbeth Maney</a><br><br>The camp, a painful sign of the human cost of the previous administration’s hard-line immigration policies, was bulldozed in March. With the election of President Biden, many of its residents were allowed into the United States; others were housed safely in shelters in Mexico. It seems an important move. Mr. Biden promised that it would be a new, more humane era along the border. But within weeks, a new camp sprang up about 55 miles farther west. A volunteer said that the situation of the camp in Reynosa is far worse than the one at Matamoros. It is overcrowded with more than 2,000 people. It is filthy and lacks the health and sanitation infrastructure that nonprofit groups had spent months installing at Matamoros. Assaults and kidnappings for ransom are commonplace.',
             location: {
               center: [-98.27050, 26.09213],
               zoom: 17,
@@ -927,9 +927,9 @@ var config = {
             id: '2-2-222AAA-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'New Neighbors from Latin American',
+            title: 'New Neighbors from Latin America',
             image: 'images/real-estate-jackson-hgts-superJumbo.jpg',
-            description: 'If you take New York as an example, where do these refugees settle down when they arrive in the city? This dataset shows the American Community Survey during 2016-2020. The darker red part is the higher Foreign born Latin America population. At the same time, these people have not yet officially become U.S. citizens. Most of the population is in Jackson Heights. They are waiting for their opportunity in this highly diverse community.',
+            description: 'Photo credits: <a href="https://www.nytimes.com/2015/05/24/realestate/jackson-heights-queens-diverse-and-evolving.html">Alan Chin</a><br><br>If one takes New York City as an example, where do these refugees settle down when they arrive in the city? This map illustrates the American Community Survey of foreign-born Latin Americans who are not U.S. citizens during 2016-2020. The darker red part has the higher foreign-born Latin American population. These people have yet to officially become U.S. citizens. Most of the population is in Jackson Heights. They are waiting for their opportunity in this highly diverse community.',
             location: {
               center:  [-74.13639, 40.66784],
               zoom: 10,
@@ -961,7 +961,7 @@ var config = {
             hidden: false,
             title: 'Encampments Removal',
             image: 'images/Chart_2.png',
-            description: 'But not all undocumented populations can find shelter. There are also people who call the street their home and live in Manhattan. New York City will also make arrangements for this situation. This map shows the hotspots of encampments removal. These people were placed in shelters provided by the government.',
+            description: 'But not all undocumented populations can find shelter. There are also people who call the street their home and live in Manhattan. New York City will also make arrangements for this situation. This map shows the hotspots of encampment removal. These people were placed in shelters provided by the government. The red-orange color of the histogram is the total population living in the shelter provided by DHS, while the blue color is the number of people from Latin America.',
             location: {
               center:  [-74.01351, 40.74544],
               zoom: 12,
@@ -1004,7 +1004,7 @@ var config = {
             hidden: false,
             title: 'Shelters - Department of Homeless Services (DHS)',
             image: 'images/homeless_to_hotelsvo041120364111711413404png.jpeg',
-            description: 'The Department of Homeland Security places them in centralized shelters. And assist them in their transfer to permanent housing and support their transition through aftercare services. But the most important thing is to assist them to enter the job market.',
+            description: 'Photo credits: <a href="https://www.nytimes.com/2015/05/24/realestate/jackson-heights-queens-diverse-and-evolving.html">Alan Chin</a><br><br>The Department of Homeland Security places them in centralized shelters. And assist them in their transfer to permanent housing and support their transition through aftercare services. But the most important thing is to assist them in entering the job market.',
             location: {
               center: [-74.15157, 40.72491],
               zoom: 10,
@@ -1045,7 +1045,7 @@ var config = {
             hidden: false,
             title: 'Employments and New Journeys',
             image: 'images/Screenshot 2022-12-01 032318.png',
-            description: 'This map is the distribution of NYCs high unemployed population, which is the dark green area. It can be seen that some shelters overlap with these areas. They also play a role in assisting the undocumented population to find jobs. On the way of slowly adapting to life, they found jobs, hobbies, and gradually coexisted peacefully with the city. They will not be so-called terrorists or a weapon for inflation.',
+            description: 'Photo credits: <a href="https://www.nytimes.com/2015/05/24/realestate/jackson-heights-queens-diverse-and-evolving.html">Alan Chin</a><br><br>This map is the distribution of the unemployed population in NYC, which is the dark green area. It can be seen that some shelters overlap with these areas. They also play a role in assisting the undocumented population in finding jobs. On the way of slowly adapting to life, they found jobs, hobbies, and gradually coexisted peacefully with the city. They will not be so-called terrorists or a weapon for inflation.',
             location: {
               center: [-74.15157, 40.72491],
               zoom: 10,
