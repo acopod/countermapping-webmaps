@@ -18,12 +18,14 @@ var config = {
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
      {
-            id: '1-2-chapter',
+            id: '1-2AAAAA-chapter',
             alignment: 'right',
             hidden: false,
             title: 'Border Crossing',
             image: 'images/numbers.png',
+            
             description: 'Migration Infiltration is an operation manipulating innocent and unwitting refugees. Violent criminal groups have recently used it by exploiting vulnerable groups and facilitating terrorist operations in asylum-providing states. In the United States, the site for this phenomenon is represented by immigrants and refugees at the US-Mexico border. Due to the difference in living standards and economic levels between the United States and Mexico, about 1 million illegal immigrants try to cross the border to live in the United States every year. More than 80% of them are Mexicans, and the other 20% are mainly from Latin America. In the fiscal year of 2021, a total of 188,228,921 people crossed the US-Mexico border. Among them, San Ysidro, El Paso, and Laredo have the highest number of passers-by, accounting for 40% of the total.',
+            image2: 'images/index-1.png',
             location: {
                 center:  [-95.78645, 33.69030],
                 zoom: 4.2,
@@ -34,12 +36,8 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:() => {
-                document.getElementById("polling-legend").style.visibility = "hidden";
-                document.getElementById("walkability-legend").style.visibility = "visible";
-                document.getElementById("vehicle-legend").style.visibility = "hidden";
-            },
-                        onChapterEnter: [
+            
+            onChapterEnter: [
                  {
                      layer: 'border_crossing',
                      opacity: 0,
@@ -105,7 +103,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            
             onChapterEnter: [
         
                  
@@ -151,7 +149,11 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("polling-legend").style.visibility = "hidden";
+                document.getElementById("walkability-legend").style.visibility = "hidden";
+                document.getElementById("vehicle-legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                  {
                      layer: 'borderencounter_a2021',
@@ -233,6 +235,7 @@ var config = {
             hidden: false,
             title: 'Unauthorized Immigrant Populations from Mexico',
             image: 'images/imig.png',
+            image2: 'images/index-2.png',
             description: 'Therefore, unauthorized immigrant populations from Mexico appeared in the city. <a href = "https://calmatters.org/california-divide/2022/04/california-undocumented-immigrants/">The government began to centrally manage these populations, and they became the mysterious population of the city.</a> Compared with the refugees who live around the U.S.-Mexico border, although these urban immigrants will directly receive assistance and welfare, they will have a more substantial structural impact on the receiving cities. But on the other hand, how will the refugees themselves be marginalized due to the fragmentation of the camps?',
             location: {
               center: [-122.14940, 39.31806],
@@ -243,7 +246,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("refugees_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                  
                  {
@@ -291,7 +296,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("refugees_legend").style.visibility = "visible";
+            },
             onChapterEnter: [
                  {
                      layer: 'inflow-number-79gkq9',
@@ -483,7 +490,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("refugees_legend").style.visibility = "hidden";
+            },
                         onChapterEnter: [
                  {
                      layer: 'route_south_1',
@@ -876,7 +885,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("latin_index").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 ],
             onChapterExit: [
@@ -902,7 +913,7 @@ var config = {
                  }]
         },
                 {
-    id: 'interlude-2',
+    /*id: 'interlude-2',
     alignment: 'center',
     hidden: false,
     description: 'The migration infiltration indicates that the invisible hands manipulate the flow of migrants to facilitate terrorist operations in states offering asylum. For homeland security, the states offering asylum label the migrants with distinct characteristics which can justify not providing assistance for them, such as people related to crime, drugs, and terrorism. The attacker thus mobilized the demographic into a sudden influx to the targeted country through propaganda to raise their impulse of migration. For the United States, the most obvious example is the US-Mexico border. Many people are waiting to enter the United States at the border, and they set up camps there, hoping to one day enter the United States to find more opportunities. Camps are the places of desperation that the public imagines. It has also been seen as an incubator for further migration infiltration. If the counter-mapping creates a new perspective, the camps may not be a catalyst for migration infiltrations. And we can understand the sequel of migration in a different way beyond the endless suffering.',
@@ -914,7 +925,7 @@ var config = {
       bearing: 0,
     },
 },
-{
+{*/
             id: '2-2-222AAA-chapter',
             alignment: 'left',
             hidden: false,
@@ -929,7 +940,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("latin_index").style.visibility = "visible";
+            },
             onChapterEnter: [                 
                  {
                      layer: 'bbc',
@@ -959,7 +972,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("latin_index").style.visibility = "hidden";
+            },
             onChapterEnter: [
             {
                      layer: 'encampments_NYC',
@@ -999,7 +1014,11 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("shelters_index").style.visibility = "visible";
+                document.getElementById("job_index").style.visibility = "hidden";
+        
+            },
             onChapterEnter: [
             {
                      layer: 'encampments_NYC',
@@ -1036,7 +1055,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("shelters_index").style.visibility = "hidden";
+                document.getElementById("job_index").style.visibility = "visible";
+            },
             onChapterEnter: [
             {
                      layer: 'encampments_NYC',
@@ -1274,22 +1296,30 @@ var config = {
             description: 'The war or conflict is not caused by a single decision, but it is the aggregation. Similarly, the innocent refugee under manipulation could present a disastrous effect on the built environment if we do not read it carefully. The connection behind the plurality and singularity is this target that the mapping wants to approach. Therefore, the datasets mentioned above not only focus on official information but also hope to use media such as reports, articles, biographies, and social media to find information and phenomena that data cannot elicit. Especially as a refugee, did he find himself a part of the weapon? Was the exaggerated propaganda and fear of wars making him embark on the path of migration?',
             location: {
               center: [-73.91267, 40.81897],
-              zoom: 14,
+              zoom: 13,
               pitch: 0,
               bearing: 0,
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("job_index").style.visibility = "hidden";
+                document.getElementById("business_index").style.visibility = "visible";
+            },
             onChapterEnter: [{
                      layer: 'encampments_NYC',
-                     opacity: 0.5,
+                     opacity: 0,
                      duration: 1
                  },
                  {
                      layer: 'NYC_afterschool',
                      opacity: 0,
                      duration: 1
+                 },
+                 {
+                     layer: 'enployment-2fvbrx',
+                     opacity: 0.5,
+                     duration: 3000
                  },
                  {
                      layer: 'NYC_dropin',
